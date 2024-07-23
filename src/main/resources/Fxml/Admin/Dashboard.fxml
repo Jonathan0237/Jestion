@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.Controllers.Admin.DashbordController">
+    <Text fx:id="user_name" layoutX="30.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Hi, Patrick" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0" />
+    <Label fx:id="login_date" styleClass="date_lbl" text="Today 2024-06-12" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0" />
+    <Text layoutX="21.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Last Requests" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="357.4000005722046" />
+    <ListView fx:id="transaction_listview" layoutX="14.0" layoutY="379.0" prefHeight="324.0" prefWidth="820.0" styleClass="transaction_listview" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="20.0" />
+   <Circle fx:id="circle" fill="DODGERBLUE" layoutX="225.0" layoutY="45.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+   <Label layoutX="255.0" layoutY="32.0" text="Active">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Label>
+   <Circle fill="#08d47c" layoutX="314.0" layoutY="45.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+    <VBox layoutX="454.0" layoutY="74.0" prefHeight="260.0" prefWidth="400.0" AnchorPane.rightAnchor="10.0">
+        <AreaChart fx:id="userDay" prefHeight="262.0" prefWidth="386.0" title="User DATA" VBox.vgrow="ALWAYS">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" label="Month" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" label="Registrations" />
+            </yAxis>
+        </AreaChart>
+    </VBox>
+    <VBox layoutX="14.0" layoutY="77.0" prefHeight="260.0" prefWidth="400.0">
+        <BarChart fx:id="requestDay" title="Request DATA">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" label="Week" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" label="Requests" />
+            </yAxis>
+        </BarChart>
+    </VBox>
+   <VBox layoutX="440.0" layoutY="411.0" prefHeight="324.0" prefWidth="400.0" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="10.0" />
+</AnchorPane>

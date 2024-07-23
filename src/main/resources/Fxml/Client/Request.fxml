@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="transactions_container" stylesheets="@../../Styles/Transactions.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.Controllers.Client.RequestController">
+    <Text layoutX="370.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requests" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="14.0" />
+    <ListView fx:id="request_listview" layoutX="19.0" layoutY="70.0" prefHeight="584.0" prefWidth="831.0" styleClass="transactions_container" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="70.0" />
+   <BorderPane prefHeight="200.0" prefWidth="200.0" />
+   <Button fx:id="print" layoutX="380.0" layoutY="686.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="157.0" text="Print">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>

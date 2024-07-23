@@ -1,0 +1,58 @@
+/* Profile.css */
+
+.dashboard {
+    -fx-background-color: #f5f5f5; /* Light background color for the dashboard */
+    -fx-padding: 20px;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333; /* Dark text color */
+    -fx-padding: 10px 0;
+}
+
+#firstNameLabel,
+#lastNameLabel,
+#payeeAddressLabel,
+#dateCreatedLabel {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555; /* Slightly lighter text color for user details */
+    -fx-font-weight: bold;
+}
+
+.Text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.5, 0, 1); /* Subtle shadow effect for the title */
+}
+
+.button {
+    -fx-background-color: #007BFF; /* Primary blue color for buttons */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.5, 0, 1); /* Subtle shadow effect for buttons */
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #004494; /* Even darker blue on press */
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 0, 2); /* Subtle shadow effect for image */
+    -fx-padding: 10px;
+    -fx-background-color: white; /* Background color to make image stand out */
+    -fx-background-radius: 5px;
+}
+
+.vbox {
+    -fx-spacing: 10px; /* Space between labels */
+}
+

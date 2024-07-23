@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.Controllers.Client.CreateRequestController">
+    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Request" textAlignment="RIGHT" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <VBox fillWidth="false" layoutX="14.0" layoutY="87.0" prefHeight="574.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="87.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Sender" />
+        <TextField fx:id="fNameRequest_fld" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Programmer" />
+      <TextField fx:id="lNameRequest_fld" layoutX="21.0" layoutY="140.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Request Message" />
+        <TextField fx:id="requestProgrName_fld" />
+      <Text layoutX="21.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commissioning Date" />
+      <DatePicker fx:id="commissioning_date" prefHeight="42.0" prefWidth="254.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Request" />
+        <CheckBox fx:id="numRequest_box" mnemonicParsing="false" />
+        <Label fx:id="numRequest_lbl" styleClass="payee_address_lbl" />
+        <Button fx:id="create_request_btn" mnemonicParsing="false" text="Create New Request" />
+        <Label fx:id="error_lbl" layoutX="10.0" layoutY="172.0" styleClass="error_lbl" text="error :" visible="false" />
+    </VBox>
+</AnchorPane>

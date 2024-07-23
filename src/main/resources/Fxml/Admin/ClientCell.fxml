@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="50.0" prefWidth="634.0" styleClass="client_cell_container" stylesheets="@../../Styles/ClientCell.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <FontAwesomeIconView glyphName="USER" layoutX="8.0" layoutY="29.0" size="20" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   <HBox layoutX="80.0" layoutY="6.0" prefHeight="40.0" prefWidth="443.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="6.0">
+      <Label fx:id="fName_lbl" text="Benjamin" />
+      <Label fx:id="lName_lbl" text="Baker" />
+      <Label fx:id="pAddress_lbl" text="\@bBaker" />
+      <Label fx:id="date_lbl" text="2024-06-08" />
+   </HBox>
+   <Button fx:id="delete_btn" layoutX="684.0" layoutY="12.0" mnemonicParsing="false" styleClass="delete_btn" text="Delete" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="12.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="TRASH" size="20" />
+      </graphic>
+   </Button>
+</AnchorPane>
